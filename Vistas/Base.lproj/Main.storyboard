@@ -47,7 +47,7 @@
                                         </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rick-horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="NBY-Cd-vxl">
-                                        <rect key="frame" x="0.0" y="366" width="300" height="54"/>
+                                        <rect key="frame" x="0.0" y="366" width="300" height="54.000000000000114"/>
                                         <color key="backgroundColor" red="1" green="0.122925516" blue="0.13161371860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                 </subviews>
@@ -89,14 +89,67 @@
                                     <action selector="atras:" destination="9qe-YT-2uK" eventType="touchUpInside" id="g6s-EF-TfU"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vp-0F-dh5">
+                                <rect key="frame" x="68" y="106" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frj-e9-Kj0">
+                                <rect key="frame" x="121" y="411" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Animación 1"/>
+                                <connections>
+                                    <action selector="animar:" destination="9qe-YT-2uK" eventType="touchUpInside" id="tDO-Ti-74c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yF-AX-E2y">
+                                <rect key="frame" x="240" y="411" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Animación 2"/>
+                                <connections>
+                                    <action selector="mover:" destination="9qe-YT-2uK" eventType="touchUpInside" id="Vc6-je-Whm"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHQ-DZ-JE6">
+                                <rect key="frame" x="106" y="508" width="180" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4g0-gQ-5OC">
+                                        <rect key="frame" x="8" y="8" width="125" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ELf-7u-Jmp">
+                                                <rect key="frame" x="28" y="18" width="138" height="126"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.57910581329999999" green="1" blue="0.37451524549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLR-on-L7Y">
+                                <rect key="frame" x="172" y="460" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Transicion"/>
+                                <connections>
+                                    <action selector="transicion:" destination="9qe-YT-2uK" eventType="touchUpInside" id="jX4-Vs-0I3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.122925516" blue="0.13161371860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bLs-SZ-Xj7"/>
                     </view>
+                    <connections>
+                        <outlet property="azul" destination="ELf-7u-Jmp" id="cJv-rn-Sev"/>
+                        <outlet property="verde" destination="4g0-gQ-5OC" id="OA3-Wd-Evo"/>
+                        <outlet property="vista" destination="0vp-0F-dh5" id="mAz-gT-KNQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQC-ph-yjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="98"/>
+            <point key="canvasLocation" x="647.82608695652175" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
