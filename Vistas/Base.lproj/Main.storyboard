@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vYU-la-UW8">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -47,7 +47,7 @@
                                         </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rick-horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="NBY-Cd-vxl">
-                                        <rect key="frame" x="0.0" y="366" width="300" height="54.000000000000114"/>
+                                        <rect key="frame" x="0.0" y="366" width="300" height="54"/>
                                         <color key="backgroundColor" red="1" green="0.122925516" blue="0.13161371860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                 </subviews>
@@ -150,6 +150,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQC-ph-yjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="647.82608695652175" y="97.767857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yer-zP-38E">
+            <objects>
+                <viewController id="6wb-rO-NPB" customClass="QRViewController" customModule="Vistas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wNu-zc-h3g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="azM-ca-2NX">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="m75-xE-BrF"/>
+                                    <constraint firstAttribute="width" constant="300" id="oKM-nQ-mMa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="azM-ca-2NX" firstAttribute="centerX" secondItem="wNu-zc-h3g" secondAttribute="centerX" id="2Lm-NI-WLX"/>
+                            <constraint firstItem="azM-ca-2NX" firstAttribute="centerY" secondItem="wNu-zc-h3g" secondAttribute="centerY" id="csv-8Y-ADI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0pE-iv-rSr"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="azM-ca-2NX" id="gaE-B2-bnM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1PS-Wm-rq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1532" y="98"/>
+        </scene>
+        <!--Save View Controller-->
+        <scene sceneID="DV1-9V-eOb">
+            <objects>
+                <viewController id="vYU-la-UW8" customClass="SaveViewController" customModule="Vistas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nAC-FK-FEj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Thx-7E-w7E">
+                                <rect key="frame" x="10" y="144" width="394" height="118"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5j-eo-ngh">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="40" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6i2-qn-Fhl">
+                                        <rect key="frame" x="-2" y="44" width="398" height="31"/>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="won-wX-rf5">
+                                        <rect key="frame" x="0.0" y="88" width="394" height="30"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="save:" destination="vYU-la-UW8" eventType="touchUpInside" id="NSg-uf-8hC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Thx-7E-w7E" firstAttribute="top" secondItem="1i2-1H-2fz" secondAttribute="top" constant="100" id="Z25-27-qDD"/>
+                            <constraint firstItem="Thx-7E-w7E" firstAttribute="leading" secondItem="1i2-1H-2fz" secondAttribute="leading" constant="10" id="b7i-o9-YgI"/>
+                            <constraint firstItem="1i2-1H-2fz" firstAttribute="trailing" secondItem="Thx-7E-w7E" secondAttribute="trailing" constant="10" id="yyd-vH-lf9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1i2-1H-2fz"/>
+                    </view>
+                    <connections>
+                        <outlet property="age" destination="6i2-qn-Fhl" id="ekX-7W-k1J"/>
+                        <outlet property="name" destination="U5j-eo-ngh" id="xbF-AI-5r4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEQ-oT-dN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2519" y="104"/>
         </scene>
     </scenes>
     <resources>

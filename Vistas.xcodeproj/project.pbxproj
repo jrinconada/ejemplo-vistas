@@ -13,6 +13,9 @@
 		7F0213432345DB02005BFDD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F0213422345DB02005BFDD8 /* Assets.xcassets */; };
 		7F0213462345DB02005BFDD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0213442345DB02005BFDD8 /* LaunchScreen.storyboard */; };
 		7FC747A6234F174C00087F67 /* RojaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC747A5234F174C00087F67 /* RojaViewController.swift */; };
+		7FFEA38D23683041004BC41E /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEA38C23683041004BC41E /* QRViewController.swift */; };
+		7FFEA38F23684246004BC41E /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEA38E23684246004BC41E /* SaveViewController.swift */; };
+		7FFEA391236844A4004BC41E /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEA390236844A4004BC41E /* Persona.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		7F0213452345DB02005BFDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F0213472345DB02005BFDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FC747A5234F174C00087F67 /* RojaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RojaViewController.swift; sourceTree = "<group>"; };
+		7FFEA38C23683041004BC41E /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		7FFEA38E23684246004BC41E /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		7FFEA390236844A4004BC41E /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				7F0213442345DB02005BFDD8 /* LaunchScreen.storyboard */,
 				7F0213472345DB02005BFDD8 /* Info.plist */,
 				7FC747A5234F174C00087F67 /* RojaViewController.swift */,
+				7FFEA38C23683041004BC41E /* QRViewController.swift */,
+				7FFEA38E23684246004BC41E /* SaveViewController.swift */,
+				7FFEA390236844A4004BC41E /* Persona.swift */,
 			);
 			path = Vistas;
 			sourceTree = "<group>";
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFEA391236844A4004BC41E /* Persona.swift in Sources */,
 				7F02133E2345DAFD005BFDD8 /* ViewController.swift in Sources */,
+				7FFEA38F23684246004BC41E /* SaveViewController.swift in Sources */,
 				7FC747A6234F174C00087F67 /* RojaViewController.swift in Sources */,
 				7F02133C2345DAFD005BFDD8 /* AppDelegate.swift in Sources */,
+				7FFEA38D23683041004BC41E /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Vistas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Vistas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
